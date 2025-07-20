@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using System.Runtime.InteropServices;
 namespace HwRestApp.Controllers;
 
-
 [ApiController]
 [Route("api/info")]
 public class InfoController : ControllerBase
