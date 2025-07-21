@@ -24,7 +24,7 @@ public class InfoController : ControllerBase
             Is64BitProcess = Environment.Is64BitProcess,
             UptimeMinutes = (int)(DateTime.Now - Environment.TickCount64.ToDateTimeFromTicks()).TotalMinutes,
             DotnetVersion = Environment.Version.ToString(),
-            EnvironmentVariables = Environment.GetEnvironmentVariables()
+            // EnvironmentVariables = Environment.GetEnvironmentVariables()
         };
 
         return Ok(info);
